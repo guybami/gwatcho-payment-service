@@ -33,6 +33,7 @@ spring:
     url: jdbc:mysql://localhost:3306/payment_db?createDatabaseIfNotExist=true&serverTimezone=Europe/Berlin
     username: root
     password: root4Web!
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
     hibernate:

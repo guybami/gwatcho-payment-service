@@ -30,8 +30,9 @@ spring:
 
   datasource:
     url: jdbc:mysql://payment-db:3306/payment_db?createDatabaseIfNotExist=true&serverTimezone=Europe/Berlin
-    username: root
-    password: root
+    username: payment_user
+    password: ${MYSQL_PAYMENT_PASSWORD:payment_password}
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
     hibernate:
